@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <section id="TodoList">
+        <div class="container">
+            <div class="ListCont">
+                <h2>TO DO LIST</h2>
+                <div class="btnWrap">
+                    <div class="btn add">추가</div>
+                    <div class="btn remove">삭제</div>
+                </div>
+                <div class="ListWrap">
+                    <div class="List" style="position: relative;">
+                        <div class="ListWrite">
+                            <div class="ListTop">
+                                <form>
+                                    <input type="text" name="listTitle" placeholder="제목을 입력해주세요.">
+                                    <p>2022년 3월 12일 토요일(자동생성)</p>
+                                    <input type="text" name="listLeftover" value="할일 n개 남음" disabled>
+                                </form>
+                            </div>
+                            <div class="ListBttm">
+                                <form>
+                                    <ul>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="1" checked>
+                                                <span> 할일을 입력해주세요</span>
+                                                <span class="trashBin"></span>
+
+                                            </label></li>
+                                        <li><label><input type="checkbox" name="checkbox" value="2">
+                                                할일을 입력해주세요
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="ListFooter">
+                            <input type="text" placeholder="할 일을 입력 후, Enter를 누르세요">
+                        </div>
+                        <div class="btn circle" onclick="insert()">
+                            <div class="plus"></div>
+                        </div>
+                    </div>
+
+                    <div class="List" style="position: relative;">
+                        <div class="ListWrite">
+                            <div class="ListTop">
+                                <form>
+                                    <input type="text" name="listTitle" placeholder="제목을 입력해주세요.">
+                                    <p>2022년 3월 12일 토요일(자동생성)</p>
+                                    <input type="text" name="listLeftover" value="할일 n개 남음" disabled>
+                                </form>
+                            </div>
+                            <div class="ListBttm">
+                                <form>
+                                    <ul>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="1" checked>
+                                                <span> 할일을 입력해주세요</span>
+                                                <span class="trashBin" style="visibility: hidden;"></span>
+
+                                            </label></li>
+                                        <li><label><input type="checkbox" name="checkbox" value="2">
+                                                할일을 입력해주세요
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="3">
+                                                할일을 입력해주세요
+                                            </label></li>
+                                    </ul>
+                                </form>
+
+                                <div class="ListFooter" style="visibility: hidden;">
+                                    <input type="text" placeholder="할 일을 입력 후, Enter를 누르세요">
+                                </div>
+                                <div class="btn circle" onclick="insert()">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="List" style="position: relative;">
+                        <div class="ListWrite">
+                            <div class="ListTop">
+                                <form>
+                                    <input type="text" name="listTitle" placeholder="제목을 입력해주세요.">
+                                    <p>2022년 3월 12일 토요일(자동생성)</p>
+                                    <input type="text" name="listLeftover" value="할일 n개 남음" disabled>
+                                </form>
+                            </div>
+                            <div class="ListBttm">
+                                <form>
+                                    <ul>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="1">
+                                                <span> 할일을 입력해주세요</span>
+                                                <span class="trashBin" style="visibility: hidden;"></span>
+
+                                            </label></li>
+                                    </ul>
+                                </form>
+
+                                <div class="ListFooter" style="visibility: hidden;">
+                                    <input type="text" placeholder="할 일을 입력 후, Enter를 누르세요">
+                                </div>
+                                <div class="btn circle" onclick="insert()">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="List" style="position: relative;">
+                        <div class="ListWrite">
+                            <div class="ListTop">
+                                <form>
+                                    <input type="text" name="listTitle" placeholder="제목을 입력해주세요.">
+                                    <p>2022년 3월 12일 토요일(자동생성)</p>
+                                    <input type="text" name="listLeftover" value="할일 n개 남음" disabled>
+                                </form>
+                            </div>
+                            <div class="ListBttm">
+                                <form>
+                                    <ul>
+                                        <li><label>
+                                                <input type="checkbox" name="checkbox" value="1">
+                                                <span> 할일을 입력해주세요</span>
+                                                <span class="trashBin" style="visibility: hidden;"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="ListFooter" style="visibility: hidden;">
+                                <input type="text" placeholder="할 일을 입력 후, Enter를 누르세요">
+                            </div>
+                            <div class="btn circle" onclick="insert()">
+                                <div class="plus"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let list = document.querySelector('List');
+        let ListWrap = document.getElementsByClassName('ListWrap');
+        let btnAdd = document.querySelector('.btn.add');
+        let btnCircle = document.querySelector('.btn cicle');
+
+        function insert() {
+
+            if (btnCircle.style.visibility === 'hidden') {
+                btnCircle.visibility = 'visible';
+            } else {
+                btnCircle.style.visibility = 'hidden';
+            }
+        }
+    </script>
+</body>
+
+</html>
